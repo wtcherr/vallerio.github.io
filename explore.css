@@ -1,0 +1,14 @@
+.main-exp{
+    margin-bottom: 40px;
+}
+.columns{
+    display: flex; 
+    justify-content: space-around;
+    margin: auto;
+}
+.column{
+    max-width: 420px;
+}
+.column img{
+    margin-bottom: 30px;
+}
