@@ -1,0 +1,22 @@
+.creators-par{
+    margin-top: 8%;
+    margin-left: 5%;
+}
+.creators-par h1,h2,p{
+    margin-bottom:10px ;
+}
+.img-view h2{
+    text-align: center;
+    margin:auto;
+}
+.img-view p{
+    text-align: center;
+    margin: auto;
+    width: 90%;
+}
+.img-view img{
+    width:350px;
+    height: 350px;
+    border-radius: 50%;
+    margin: 0px 35px;
+}

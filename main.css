@@ -18,13 +18,16 @@ nav{
     width: 100%;
     position: fixed;
     border-radius: 0% 0% 0% 100px;
+    z-index: 1;
 }
 .nav{
     display: flex;
     justify-content: space-around;
-    margin-top: 2.5vh;
-    width: 100%;
+    align-items: center;
+    width: 80%;
+    margin: auto;
     font-size: 1.1em;
+    min-height: 8vh;
 }
 .grad{
     background-image:linear-gradient(to right,rgb(67, 92, 121),rgb(146, 197, 255),rgba(255, 0, 76, 0.5));
@@ -35,43 +38,25 @@ nav{
     width: 50%;
     list-style: none;
 }
-.exp-links{
-    display: flex;
-    width: 90%;
-    justify-content: space-around;
-    margin: auto;
-    margin-top: 25px;
-    margin-bottom: 10px;
-    min-height: 30px;
-}
-.exp-links li{
-    padding: 3px;
-    border: 2px solid purple;
-    border-radius: 20px;
-}
-.exp-links a{
-    text-decoration: none;
-    color: white;
-    padding: 0 20px 0 20px;
-}
 .nav-links a{
     color: black;
     text-decoration: none;
-    transition: color 0.8s ease;
+    transition: color 0.6s ease;
 }
 .nav-links a:hover{
     color: white;
 }
 .first-sec{
-    position: relative;
-    z-index: -1;
+    position: static;
     margin-bottom: 30px;
     padding-bottom: 20px;
 }
-.first-sec .main-p{
+.main-p{
     position: absolute;
     top: 0px;
     margin: 200px;
+}
+.main-p h3,p{
     max-width: 500px;
 }
 .first-sec img{
@@ -155,7 +140,7 @@ nav{
     height: 40px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     position: absolute;
     bottom: 0px;
 }
