@@ -54,7 +54,7 @@ nav{
 .main-p{
     position: absolute;
     top: 0px;
-    margin: 200px;
+    margin: 15% 0 0 20%;
 }
 .main-p h3,p{
     max-width: 500px;
@@ -111,6 +111,7 @@ nav{
 .third-sec img{
     border-radius: 50%;
     box-shadow: 5px 5px 15px grey;
+    padding: 4px;
 }
 .footer{
     width: 100%;

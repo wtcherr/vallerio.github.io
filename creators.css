@@ -19,4 +19,6 @@
     height: 350px;
     border-radius: 50%;
     margin: 0px 35px;
+    padding: 4px;
+    object-fit: cover;
 }
