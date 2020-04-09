@@ -30,7 +30,7 @@ nav{
     min-height: 8vh;
 }
 .grad{
-    background-image:linear-gradient(to right,rgb(67, 92, 121),rgb(146, 197, 255),rgba(255, 0, 76, 0.5));
+    background-image:linear-gradient(to right,rgb(67, 92, 121),rgb(146, 197, 255),rgb(221, 76, 120));
 }
 .nav-links{
     display: flex;
