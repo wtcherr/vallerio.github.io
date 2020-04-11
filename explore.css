@@ -68,26 +68,51 @@ nav .search-bar input{
 }
 .column{
     max-width: 420px;
+    margin: 0px 2vh;
 }
 .show-img{
     position: relative;
     margin-bottom: 30px;
 }
+.show-img a{
+    color: black;
+}
 .img-details{
+    display: flex;
     position: absolute;
     width: 100%;
     height: 110px;
     bottom: 0px;
     align-items: center;
     padding-top: 30px;
+    font-size: 0.9em;
+}
+.img-details p{
+    max-width: 240px;
 }
 .img-details .user{
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     object-fit: cover;
     padding: 2px;
     margin-left: 20px;
     margin-right: 20px;
     float: left;
+}
+.img-details .plus{
+    width: 30px;
+    height: 30px;
+}
+.cover{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient(to bottom,rgba(67, 92, 121,0.7),rgb(146, 197, 255,0.1),rgb(221, 76, 120,1));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.cover:hover{
+    opacity: 1;
 }
