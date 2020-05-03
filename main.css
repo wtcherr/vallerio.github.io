@@ -24,23 +24,45 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 80%;
-    margin: auto;
+    width: 95%;
+    margin-left: 10vw;
     font-size: 1.2vw;
     height: 4vw;
 }
 .user-icon{
     width: 1.5vw;
     height: 1.5vw;
+    cursor: pointer;
+}
+.profile-drop{
+    position: relative;
+    display: flex;
+    width: 23vw;
     float: right;
+}
+.profile-list{
+    display: flex;
+    justify-content: space-around;
+    width: 15vw;
+}
+.profile-list a{
+    text-decoration: none;
+    color: white;
+}
+.show-flex{
+    display: flex;
+    justify-content: space-around;
 }
 .grad{
     background-image:linear-gradient(to right,rgb(67, 92, 121),rgb(146, 197, 255),rgb(221, 76, 120));
 }
+.shadow{
+    box-shadow: 5px 5px 15px grey;
+}
 .nav-links{
     display: flex;
     justify-content: space-around;
-    width: 50%;
+    width: 45%;
     list-style: none;
 }
 .nav-links a{
@@ -52,26 +74,39 @@ nav{
     color: white;
 }
 .first-sec{
-    position: static;
     margin-bottom: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
+}
+.home-img{
+    background-image: url("./resources/HomePage/CameraSnow.jpg");
+    height: 48vw;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 0 0px 0px 55px;
 }
 .main-p{
-    position: absolute;
-    top: 0px;
-    margin: 15% 0 0 20%;
+    width: 100%;
 }
-.main-p h3,p{
-    max-width: 65vw;
+.main-p h3{
+    font-weight: bold;
+    margin-bottom: 1vw;
+    font-size: 1.5vw;
+}
+.main-p p{
+    max-width: 60%;
     font-size: 1.2vw;
 }
-.first-sec img{
-    border-radius: 0% 0% 0% 60%;
-    box-shadow: 0px 5px 15px;
-    padding: 0 0 0 15px;
+.par-left{
+    position: absolute;
+    top: 0;
+    margin-top: 15%;
+    margin-left: 20%;
 }
-.first-sec .grad{
-    background-image:linear-gradient(to top,rgb(67, 92, 121),rgb(146, 197, 255),rgba(255, 0, 76, 0.5));
+.par-center{
+    text-align: center;
+}
+.par-center p{
+    margin: auto;
 }
 .second-sec{
     display: flex;
@@ -81,18 +116,15 @@ nav{
 }
 .welcome{
     padding: 10px;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 5px 5px 15px grey;
+    width: 40%; 
+    margin: auto;
+    margin-top: 100px;
     border-radius: 20px;
 }
-.welcome .par{
-    width: 30vw;
-    height: 10vw;
+.welcome .get{
     background-color: white;
     margin: auto;
-    justify-self: center;
-    padding: 2vw;
+    padding: 10%;
     border-radius: 30px;
 }
 .welcome h3{
@@ -103,19 +135,15 @@ nav{
 .welcome p{
     text-align: center;
 }
-.get-started{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 100px ;
+.get-started-btn{
+    width: 200px;
+    margin: 30px auto;
+    border-radius: 10px;
 }
-.get-started a{
-    color: black;
-    text-decoration: none;
-    padding: 10px;
-    box-shadow: 2px 2px 5px;
-    border-radius: 5px 0px 5px 0px;
+.get-started-btn button{
+    border: none;
+    padding: 15px;
+    width: 100%;
 }
 .third-sec{
     display: flex;
@@ -166,18 +194,335 @@ nav{
     color: black;
     font-weight: bold;
 }
-.par h3{
-    margin-bottom: 10px;
-    font-weight: bold;
-    font-size: 1.8vw;
-}
-.par p{
-    font-style: normal;
-}
 .line{
     width: 50%;
     border: 1px solid black;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 50px;
+}
+/*Cart and Wishlist*/
+table, th, td {
+    text-align: center;
+    background-color: white;
+    padding: 5px;
+}
+table{
+    margin: auto;
+    width: 85%;
+    height: 35vw;
+    margin-bottom: 30px;
+    background-color: rgb(0, 0, 70);
+}
+th{
+    background-color: rgb(250, 249, 249);
+}
+td{
+    max-width: 200px;
+}
+.wish-view img{
+    width:14vw;
+    height: 14vw;
+    border-radius: 50%;
+    padding: 4px;
+    object-fit: cover;
+}
+/*About Us*/
+.about-par{
+    width: 50vw;
+    margin-bottom: 30px;
+}
+.about-par h1{
+    margin-bottom: 20px;
+}
+.section{
+    margin: 50px 0;
+}
+.browse-btn{
+    border: none;
+    width: 15vw;
+    height: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.about-vid{
+    width: 40vw;
+    top: 0;
+    right: 0;
+    margin: 70px 20px 0 0;
+    padding-bottom: 5px;
+    box-shadow: 5px 5px 15px grey;
+}
+.about-sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    height: 45vw;
+}
+.about-img1, .about-img2, .about-img3{
+    height: 20vw;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.about-img1{
+    background-image: url("./resources/AboutPics/Moon.jpg");
+}
+.about-img2{
+    background-image: url("./resources/AboutPics/Snow.jpg");
+}
+.about-img3{
+    background-image: url("./resources/AboutPics/Sea.jpg");
+}
+.our-team{
+    height: 45vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.member{
+    width: 22%;
+    height: 90%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 15px grey;
+}
+.member-img{
+    height: 80%;
+    background-position: center;
+    background-size: cover;
+}
+#Khaled{
+    background-image: url(./resources/AboutPics/Khaled.jpeg);
+}
+#Menna{
+    background-image: url(./resources/AboutPics/Menna.jpeg);
+}
+#Mariam{
+    background-image: url(./resources/AboutPics/Mariam.jpeg);
+}
+#Dareen{
+    background-image: url(./resources/AboutPics/Dareen.jpeg);
+}
+.about-member{
+    text-align: center;
+    margin-top: 20px;
+}
+/*Collections*/
+.collection-view{
+    margin-bottom: 50px;
+}
+.package{
+    display: flex;
+    justify-items: center;
+    box-shadow: 5px 5px 15px grey;
+}
+.large-img{
+    background-size: cover;
+    background-position: center;
+    width: 35vw;
+    height: 20vw;
+}
+.package-small-img{
+    width: 15vw;
+}
+.large-img2{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 10vw;
+}
+#A100{
+    background-image: url(./resources/CollectionPics/1.jpg);
+}
+#A101{
+    background-image: url(./resources/CollectionPics/2.jpg);
+}
+#A102{
+    background-image: url(./resources/CollectionPics/3.jpg);
+}
+#B100{
+    background-image: url(./resources/CollectionPics/4.jpg);
+}
+#B101{
+    background-image: url(./resources/CollectionPics/5.jpg);
+}
+#B102{
+    background-image: url(./resources/CollectionPics/6.jpg);
+}
+#C100{
+    background-image: url(./resources/CollectionPics/7.jpg);
+}
+#C101{
+    background-image: url(./resources/CollectionPics/8.jpg);
+}
+#C102{
+    background-image: url(./resources/CollectionPics/9.jpg);
+}
+#D100{
+    background-image: url(./resources/CollectionPics/10.jpg);
+}
+#D101{
+    background-image: url(./resources/CollectionPics/11.jpg);
+}
+#D102{
+    background-image: url(./resources/CollectionPics/12.jpg);
+}
+#E100{
+    background-image: url(./resources/CollectionPics/13.jpg);
+}
+#E101{
+    background-image: url(./resources/CollectionPics/14.jpg);
+}
+#E102{
+    background-image: url(./resources/CollectionPics/15.jpg);
+}
+#F100{
+    background-image: url(./resources/CollectionPics/16.jpg);
+}
+#F101{
+    background-image: url(./resources/CollectionPics/17.jpg);
+}
+#F102{
+    background-image: url(./resources/CollectionPics/18.jpg);
+}
+#G100{
+    background-image: url(./resources/CollectionPics/19.jpg);
+}
+#G101{
+    background-image: url(./resources/CollectionPics/20.jpg);
+}
+#G102{
+    background-image: url(./resources/CollectionPics/21.jpg);
+}
+#H100{
+    background-image: url(./resources/CollectionPics/22.jpg);
+}
+#H101{
+    background-image: url(./resources/CollectionPics/23.jpg);
+}
+#H102{
+    background-image: url(./resources/CollectionPics/24.jpg);
+}
+#I100{
+    background-image: url(./resources/CollectionPics/25.jpg);
+}
+#I101{
+    background-image: url(./resources/CollectionPics/26.jpg);
+}
+#I102{
+    background-image: url(./resources/CollectionPics/27.jpg);
+}
+/*Contact*/
+.contact-msg{
+    margin-bottom: 50px;
+}
+.contact-msg .main-p{
+    margin-top: 100px;
+    position: relative;
+}
+.form{
+    width: 650px;
+    min-height: 650px;
+    margin: auto;
+    margin-bottom: 100px;
+    border-radius: 100px;
+    padding: 15px;
+    box-shadow: 5px 5px 15px grey;
+}
+.loginform{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    margin-bottom: 100px;
+    border-radius: 100px;
+    padding: 15px;
+    box-shadow: 5px 5px 15px grey;
+}
+.contact-form{
+    width: 100%;
+    height: 100%;
+    border-radius: 110px;
+    background-color: white;
+    margin: auto;
+}
+.contact-form form{
+    margin: 100px 100px 100px 100px;
+}
+.field{
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+.field-text{
+    width: 100%;
+    position: relative;
+    height: 100px;
+    margin-bottom: 20px;
+}
+.field input{
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 0, 76);
+    padding-top: 50px;
+    border: none;
+    outline: none;
+}
+.field label{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black ;
+}
+.field-text textarea{
+    position: absolute;
+    width: 100%;
+    color: rgb(255, 0, 76);
+    height: 70px;
+    bottom: 0;
+    border: none;
+    outline: none;
+}
+.field-text .subject{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black ;
+}
+.subject .label-content{
+    position: absolute;
+    bottom: 50px;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+.label-content{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+.field input:focus + label .label-content, .field input:valid + label .label-content{
+    transform:translateY(-150%);
+    font-size: 0.9em;
+    color: rgb(67, 92, 121);
+}
+.field-text textarea:focus + .subject .label-content, .field-text textarea:valid + .subject .label-content{
+    transform:translateY(-150%);
+    font-size: 0.9em;
+    color: rgb(67, 92, 121);
+}
+input[type=submit] {
+    color: black;
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }

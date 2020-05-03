@@ -1,0 +1,104 @@
+.collection-view{
+    margin-bottom: 50px;
+}
+.package{
+    display: flex;
+    justify-items: center;
+    width: 50vw;
+    height: 20vw;
+}
+.large-img{
+    background-size: cover;
+    background-position: center;
+    width: 70%;
+}
+.package-small-img{
+    width: 30%;
+}
+.large-img2{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50%;
+}
+#A100{
+    background-image: url(./resources/CollectionPics/1.jpg);
+}
+#A101{
+    background-image: url(./resources/CollectionPics/2.jpg);
+}
+#A102{
+    background-image: url(./resources/CollectionPics/3.jpg);
+}
+#B100{
+    background-image: url(./resources/CollectionPics/4.jpg);
+}
+#B101{
+    background-image: url(./resources/CollectionPics/5.jpg);
+}
+#B102{
+    background-image: url(./resources/CollectionPics/6.jpg);
+}
+#C100{
+    background-image: url(./resources/CollectionPics/7.jpg);
+}
+#C101{
+    background-image: url(./resources/CollectionPics/8.jpg);
+}
+#C102{
+    background-image: url(./resources/CollectionPics/9.jpg);
+}
+#D100{
+    background-image: url(./resources/CollectionPics/10.jpg);
+}
+#D101{
+    background-image: url(./resources/CollectionPics/11.jpg);
+}
+#D102{
+    background-image: url(./resources/CollectionPics/12.jpg);
+}
+#E100{
+    background-image: url(./resources/CollectionPics/13.jpg);
+}
+#E101{
+    background-image: url(./resources/CollectionPics/14.jpg);
+}
+#E102{
+    background-image: url(./resources/CollectionPics/15.jpg);
+}
+#F100{
+    background-image: url(./resources/CollectionPics/16.jpg);
+}
+#F101{
+    background-image: url(./resources/CollectionPics/17.jpg);
+}
+#F102{
+    background-image: url(./resources/CollectionPics/18.jpg);
+}
+#G100{
+    background-image: url(./resources/CollectionPics/19.jpg);
+}
+#G101{
+    background-image: url(./resources/CollectionPics/20.jpg);
+}
+#G102{
+    background-image: url(./resources/CollectionPics/21.jpg);
+}
+#H100{
+    background-image: url(./resources/CollectionPics/22.jpg);
+}
+#H101{
+    background-image: url(./resources/CollectionPics/23.jpg);
+}
+#H102{
+    background-image: url(./resources/CollectionPics/24.jpg);
+}
+#I100{
+    background-image: url(./resources/CollectionPics/25.jpg);
+}
+#I101{
+    background-image: url(./resources/CollectionPics/26.jpg);
+}
+#I102{
+    background-image: url(./resources/CollectionPics/27.jpg);
+}

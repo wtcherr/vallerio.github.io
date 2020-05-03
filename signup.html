@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+    <script src="./app.js"></script>
+    <title>VALLERIO</title>
+</head>
+<body>
+    <nav class="grad">
+        <div class="nav">
+            <div class="logo"><a href="index.html">VALLERIO</a></div>
+            <ul class="nav-links">
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="collection.html">Collections</a></li>
+                <li><a href="creators.html">Creators</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="profile-drop">
+                <img src="./resources/Icons/user.png" alt="" class="user-icon" onclick="profileList()">
+                <ul class="profile-list"></ul>
+            </div>
+        </div>
+    </nav>
+    <div class="contact-msg">
+        <div class="main-p par-center">
+            <h3>Sign Up </h3>
+            <p>Ready for your new journey?<br>sign up today to begin the newest and most exiting chapter in your life</p>
+        </div>
+    </div>
+    <div class="form grad">
+        <div class="contact-form">
+            <form onsubmit="submitMsg()">
+                <div class="field">
+                    <input type="text" name="name" id="name" autocomplete="off" required maxlength="35">
+                    <label for="name">
+                        <span class="label-content">Name</span>
+                    </label>
+                </div>
+                <div class="field">
+                    <input type="text" name="email" id="name" autocomplete="off" required maxlength="35"> 
+                    <label for="name">
+                        <span class="label-content">UserName</span>
+                    </label>
+                </div>
+                <div class="field">
+                    <input type="text" name="email" id="email" autocomplete="off" required maxlength="35"> 
+                    <label for="email">
+                        <span class="label-content">Email Address</span>
+                    </label>
+                </div>
+                <div class="field">
+                    <input type="password" name="Password" id="Password" autocomplete="off" required maxlength="12">
+                    <label for="password">
+                        <span class="label-content">Password</span>
+                    </label>
+                </div>
+                <div class="field">
+                    <input type="password" name="Password" id="Password" autocomplete="off" required maxlength="12">
+                    <label for="password">
+                        <span class="label-content"> Confirm Password</span>
+                    </label>
+                </div>
+                <input type="submit" class="grad" value="Register">
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <li><a href="collection.html">Collections</a></li>
+            <li><a href="creators.html">Creators</a></li>
+            <li><a href="contact.html">Connect</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+         <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, maxime dolor accusantium tempore 
+            mollitia molestias enim laudantium. Vel, similique, officia quidem corporis dicta,
+            illo culpa nam facere distinctio officiis unde.</p>
+        <div class="copyright grad">
+            <p>&copy;All Rights Reserved</p>
+        </div>
+    </div>
+</body>
+</html>
