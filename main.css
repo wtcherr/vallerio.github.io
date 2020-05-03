@@ -74,8 +74,8 @@ nav{
     color: white;
 }
 .first-sec{
-    margin-bottom: 30px;
-    padding-bottom: 30px;
+    margin-bottom: 10vw;
+    padding-bottom: 1.5vw;
 }
 .home-img{
     background-image: url("./resources/HomePage/CameraSnow.jpg");
@@ -90,11 +90,11 @@ nav{
 .main-p h3{
     font-weight: bold;
     margin-bottom: 1vw;
-    font-size: 1.5vw;
+    font-size: 1.5em;
 }
 .main-p p{
     max-width: 60%;
-    font-size: 1.2vw;
+    font-size: 1.2em;
 }
 .par-left{
     position: absolute;
@@ -201,6 +201,14 @@ nav{
     margin-top: 20px;
     margin-bottom: 50px;
 }
+@media screen and (max-width:720px){
+    .main-p h3{
+        font-size: 1.2em;
+    }
+    .main-p p{
+        font-size: 1em;
+    }
+}
 /*Cart and Wishlist*/
 table, th, td {
     text-align: center;
@@ -227,9 +235,38 @@ td{
     padding: 4px;
     object-fit: cover;
 }
+@media screen and (max-width: 720px){
+    table{
+        font-size: 0.7em;
+    }
+    table, th, td {
+        padding: 2px;
+    }
+    .wish-view img{
+        width:14vw;
+        height: 14vw;
+        border-radius: 50%;
+        padding: 2px;
+    }
+}
 /*About Us*/
+.about-sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.who-sec{
+    width: 60%;
+}
+.who-sec a{
+    text-decoration: none;
+    color: black;
+}
 .about-par{
-    width: 50vw;
+    width: 100%;
     margin-bottom: 30px;
 }
 .about-par h1{
@@ -238,28 +275,24 @@ td{
 .section{
     margin: 50px 0;
 }
+.btns{
+    display: flex;
+    width: 100%;
+}
 .browse-btn{
     border: none;
-    width: 15vw;
-    height: 50px;
+    width: 150px;
+    padding: 20px;
+    text-align: center;
     margin-right: 20px;
     cursor: pointer;
+    background-color: rgb(207, 207, 207);
 }
 .about-vid{
-    width: 40vw;
-    top: 0;
-    right: 0;
+    width: 40%;
     margin: 70px 20px 0 0;
     padding-bottom: 5px;
     box-shadow: 5px 5px 15px grey;
-}
-.about-sec{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-left: 20px;
-    margin-bottom: 50px;
-    height: 45vw;
 }
 .about-img1, .about-img2, .about-img3{
     height: 20vw;
@@ -276,7 +309,6 @@ td{
     background-image: url("./resources/AboutPics/Sea.jpg");
 }
 .our-team{
-    height: 45vw;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -284,7 +316,8 @@ td{
 }
 .member{
     width: 22%;
-    height: 90%;
+    height: 45vw;
+    margin: 20px 0;
     background-color: rgb(255, 255, 255);
     box-shadow: 5px 5px 15px grey;
 }
@@ -309,7 +342,42 @@ td{
     text-align: center;
     margin-top: 20px;
 }
+@media screen and (max-width: 1080px){
+    .about-sec{
+        display: block;
+    }
+    .who-sec{
+        width: 90%;
+        margin: auto;
+    }
+    .about-vid{
+        width: 70%;
+        margin: 60px auto;
+    }
+    .btns{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 720px){
+    .our-team{
+        display: block;
+    }
+    .member{
+        margin: 20px auto;
+        width: 400px;
+        height: 600px;
+    }
+    .about-img1,.about-img2,.about-img3{
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+}
 /*Collections*/
+.collections-par{
+    margin-top: 100px;
+    text-align: center;
+}
 .collection-view{
     margin-bottom: 50px;
 }
@@ -413,6 +481,22 @@ td{
 }
 #I102{
     background-image: url(./resources/CollectionPics/27.jpg);
+}
+@media screen and (max-width: 720px){
+    .large-img{
+        width:70%;
+        height: 200px;
+    }
+    .package-small-img{
+        width: 30%;
+    }
+    .large-img2{
+        height: 100px;
+    }
+    .collection-view h2{
+        font: 1em;
+    }
+    .
 }
 /*Contact*/
 .contact-msg{

@@ -1,40 +1,111 @@
-h2{
-    font-size: 1.7vw;
-}
 .creators-par{
-    margin-top: 8%;
-    margin-left: 5%;
-}
-.creators-par h1,h2,p{
-    margin-bottom: 0.8vw;
-}
-.creators-par h1{
-    font-size:2vw;
-}
-.creators-par h2{
-    font-size: 1.5vw;
-}
-.img-view h2{
+    margin-top: 10%;
     text-align: center;
-    margin:auto;
-    margin-top: 10px;
-}
-.img-view p{
-    text-align: center;
-    margin: auto;
-    width: 90%;
-}
-.img-view img{
-    width:26vw;
-    height: 26vw;
-    border-radius: 50%;
-    margin: 0 2vw;
-    padding: 4px;
-    object-fit: cover;
-    box-shadow: 5px 5px 15px grey;
+    font-size: 1em;
 }
 .img-view{
     margin-bottom:0;
+    width: 100%;
     padding-top: 15px;
-    min-height: 37vw;
+    height: 550px;
 }
+.img-view h2{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.3em;
+}
+.img-view p{
+    text-align: center;
+    width: 90%;
+    font-size: 1em;
+}
+.creator{
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    margin: auto;
+    padding: 4px;
+}
+.creator-img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+#A200{
+    background-image: url(./resources/CreatorsPics/Daniel.jpeg);
+}
+#A201{
+    background-image: url(./resources/CreatorsPics/Mohamed.jpg);
+}
+#A202{
+    background-image: url(./resources/CreatorsPics/Jenny.jpg);
+}
+#A203{
+    background-image: url(./resources/CreatorsPics/lily.jpg);
+}
+#A204{
+    background-image: url(./resources/CreatorsPics/Tarek.jpg);
+}
+#A205{
+    background-image: url(./resources/CreatorsPics/Mariam.jpg);
+}
+#A206{
+    background-image: url(./resources/CreatorsPics/Khaled.jpeg);
+}
+#A207{
+    background-image: url(./resources/CreatorsPics/Ahmed.jpg);
+}
+#A208{
+    background-image: url(./resources/CreatorsPics/Abdelrahman.jpg);
+}
+#A209{
+    background-image: url(./resources/CreatorsPics/Youssef.jpg);
+}
+#A210{
+    background-image: url(./resources/CreatorsPics/Dareen.jpg);
+}
+#A211{
+    background-image: url(./resources/CreatorsPics/Menna.jpg);
+}
+#A212{
+    background-image: url(./resources/CreatorsPics/Mark.jpg);
+}
+#A213{
+    background-image: url(./resources/CreatorsPics/Omar.jpg);
+}
+#A214{
+    background-image: url(./resources/CreatorsPics/Abdullah.jpeg);
+}
+@media screen and (max-width: 1080px){
+    .creators-par{
+        font-size: 0.8em;
+    }
+    .img-view{
+        height: 450px;
+    }
+    .img-view h2{
+        font-size: 1em;
+    }
+    .img-view p{
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 720px){
+    .img-view{
+        height: 500px;
+    }
+    .img-view h2{
+        font-size: 1.2em;
+    }
+    .img-view p{
+        font-size: 1em;
+    }
+    .creator{
+        width: 350px;
+        height: 350px;
+    }
+}
+
+
